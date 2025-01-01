@@ -17,10 +17,29 @@
 
     // print_r($newarray);
 
-    $array1=array("BTech","MCA","BTech","MTech","MCA","BCA");
-    $newarray=array_unique($array1); // This function shows unique value without repeating same value.
-    
-    print_r($newarray);
+    // $array1=array("BTech","MCA","BTech","MTech","MCA","BCA");
+    // $newarray=array_unique($array1); // This function shows unique value without repeating same value.
+
+    // print_r($newarray);
+
+
+    // function multi($n)
+    // {
+    //   return $n*5;
+    // }
+     
+    //     $array1=array(5,10,20,30,40,50);
+    //     $newarray=array_map('multi',$array1);
+    //     print_r($newarray);
+
+
+    // $newarray=range(1,20);
+    $newarray=range(1,20,2); //(from,to,no.ofstep)
+    // print_r($newarray);
+    for($i=0; $i<count($newarray); $i++){
+      echo $newarray[$i]."<br>";
+
+    }
 
   ?>
 </body>
