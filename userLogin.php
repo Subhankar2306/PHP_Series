@@ -32,7 +32,8 @@
       $pass = $_POST['txtpass'];
 
       if (strcasecmp($user, "Subha") == 0 && strcmp($pass, "panskura") == 0) {
-        echo "<font color='green' size='5'>You are a valid user</font>";
+        // echo "<font color='green' size='5'>You are a valid user</font>";
+        header("Location:simpleForm.php ");  // by using header() function we can redirect this page to other page
       } else {
         echo "<font color='red' size='5'>You are an invalid user</font>";
       }
