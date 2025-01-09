@@ -8,14 +8,14 @@
 <body>
   <center>
     <?php
-    $user=$_POST['txtuser'];
-    $pass=$_POST['txtpass'];
-    // echo $user;
-    // echo $pass;
-    if(strcmp($user,"Subha")==0 and strcasecmp($pass,"pku"))
-        echo "<font color=green size=5> You are Valid user</font>";
-      else
-        echo "<font color=red size=5> You are not Valid user</font>";
+    // $user=$_POST['txtuser'];
+    // $pass=$_POST['txtpass'];
+    // // echo $user;
+    // // echo $pass;
+    // if(strcmp($user,"Subha")==0 and strcasecmp($pass,"pku"))
+    //     echo "<font color=green size=5> You are Valid user</font>";
+    //   else
+    //     echo "<font color=red size=5> You are Invalid user</font>";
     ?>
   </center>
 </body>

@@ -7,27 +7,36 @@
 </head>
 <body>
   <center>
-    <form method = post action='checklogin.php' >
-      <table border=1>
+    <form method="post" action="">
+      <table border="1">
         <tr>
           <th>User Name</th>
-          <th><input type=text name= txtuser></th>
+          <th><input type="text" name="txtuser"></th>
         </tr>
         <tr>
           <td>Password :</td>
-          <td><input type=password name=txtpass></td>
+          <td><input type="password" name="txtpass"></td>
         </tr>
         <tr>
           <td></td>
           <td>
-            <input type="submit" value="Submit">
-            <input type="reset" value= "Reset">
+            <input type="submit" value="Submit" name="submitbtn">
+            <input type="reset" value="Reset">
           </td>
         </tr>
       </table>
     </form>
     <?php
+    if (isset($_POST['submitbtn'])) {
+      $user = $_POST['txtuser'];
+      $pass = $_POST['txtpass'];
 
+      if (strcasecmp($user, "Subha") == 0 && strcmp($pass, "panskura") == 0) {
+        echo "<font color='green' size='5'>You are a valid user</font>";
+      } else {
+        echo "<font color='red' size='5'>You are an invalid user</font>";
+      }
+    }
     ?>
   </center>
 </body>
